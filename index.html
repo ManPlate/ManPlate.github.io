@@ -1,34 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Bangalore Fun Community Activities</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    body { font-family: Arial, sans-serif; margin: 2em; }
-    .group { border: 1px solid #eee; border-radius: 8px; padding: 1em; margin-bottom: 1em; }
-    .activity { font-size: 1.25em; font-weight: bold; }
-    .description { margin: 0.5em 0; }
+    body {
+      background: #f9f9f9;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #232323;
+    }
+    header {
+      background: #292e49;
+      color: #fff;
+      padding: 2em 1em 1em 1em;
+      text-align: center;
+    }
+    h1 {
+      margin: 0 0 0.5em 0;
+      font-size: 2.2em;
+    }
+    .container {
+      max-width: 800px;
+      margin: 2em auto;
+      padding: 1em;
+    }
+    .group-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(44,62,80,0.07);
+      padding: 1.5em;
+      margin-bottom: 1.5em;
+      transition: box-shadow 0.2s;
+    }
+    .group-card:hover {
+      box-shadow: 0 4px 16px rgba(44,62,80,0.14);
+    }
+    .group-title {
+      font-size: 1.3em;
+      margin: 0 0 0.2em 0;
+      color: #11698e;
+    }
+    .group-meta {
+      font-size: 0.98em;
+      color: #6b6b6b;
+      margin-bottom: 0.5em;
+    }
+    .group-link a {
+      color: #fd6d02;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .group-link a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      color: #8c8c8c;
+      font-size: 1em;
+      margin: 2em 0 1em 0;
+    }
     @media (max-width: 600px) {
-      body { margin: 0.5em; font-size: 1em; }
+      .container { padding: 0.5em; }
+      .group-card { padding: 1em; }
+      h1 { font-size: 1.3em; }
     }
   </style>
 </head>
 <body>
-  <h1>Bangalore Communities: Fun Things To Do</h1>
-  <div class="group">
-    <div class="activity">Victory Point Board Games</div>
-    <div class="description">Weekly board game sessions at several cafes, all skill levels welcome.</div>
-    <div>Locations: Indiranagar, Koramangala, HSR</div>
-    <div><a href="https://www.meetup.com/VictoryPointBoardgames/">Join on Meetup</a></div>
+  <header>
+    <h1>Bangalore Fun Communities & Groups</h1>
+    <div>Find a club, meetup, or hobby group to join in Bangalore</div>
+  </header>
+  <div class="container">
+    <div class="group-card">
+      <div class="group-title">Victory Point Board Games</div>
+      <div class="group-meta">Locations: Indiranagar, Koramangala, HSR &bull; Board Games</div>
+      <div>Play classic and new board games with a friendly group. All levels welcome. Weekly sessions at city cafes.</div>
+      <div class="group-link"><a href="https://www.meetup.com/VictoryPointBoardgames/" target="_blank">Join on Meetup</a></div>
+    </div>
+    <div class="group-card">
+      <div class="group-title">Bengaluru Pet Parents</div>
+      <div class="group-meta">All over Bangalore &bull; Dog/Pet Meetups</div>
+      <div>Dog parents meet regularly for socializing, walks, and pet-friendly outings. Join their WhatsApp via Instagram.</div>
+      <div class="group-link"><a href="https://instagram.com/aurzdoggie" target="_blank">@aurzdoggie on Instagram</a></div>
+    </div>
+    <div class="group-card">
+      <div class="group-title">Smith’s DIY Woodworking</div>
+      <div class="group-meta">Basavanagudi &bull; DIY/Workshops</div>
+      <div>Hands-on carpentry and DIY building sessions for all levels. Monthly workshops, tools provided.</div>
+      <div class="group-link"><a href="#" target="_blank">Contact on Facebook</a></div>
+    </div>
+    <!-- Add more .group-card elements for other groups -->
   </div>
-  <div class="group">
-    <div class="activity">Bengaluru Pet Parents</div>
-    <div class="description">Meetups for dog parents. Socialize your furry friends and join fun events.</div>
-    <div>Contact: Instagram @aurzdoggie</div>
-    <div>Frequency: Regular meetups</div>
-  </div>
-  <!-- Add more groups similarly -->
-  <hr>
-  <footer style="font-size:0.9em;">List curated for Bangalore – Suggest a new group? Email us: youremail@example.com</footer>
+  <footer>
+    Want to add a group? Email us at youremail@example.com
+  </footer>
 </body>
 </html>
